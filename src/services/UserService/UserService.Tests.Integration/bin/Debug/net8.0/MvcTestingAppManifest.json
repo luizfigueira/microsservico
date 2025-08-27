@@ -1,0 +1,6 @@
+{
+  "UserService.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/Silvana\/repos\/microsservico\/src\/services\/UserService\/UserService.API",
+  "UserService.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/Silvana\/repos\/microsservico\/src\/services\/UserService\/UserService.Application",
+  "UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/Silvana\/repos\/microsservico\/src\/services\/UserService\/UserService.Domain",
+  "UserService.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/Silvana\/repos\/microsservico\/src\/services\/UserService\/UserService.Infrastructure"
+}

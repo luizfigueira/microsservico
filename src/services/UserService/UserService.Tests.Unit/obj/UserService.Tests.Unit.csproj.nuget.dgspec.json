@@ -1,0 +1,237 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Tests.Unit/UserService.Tests.Unit.csproj": {}
+  },
+  "projects": {
+    "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Application/UserService.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Application/UserService.Application.csproj",
+        "projectName": "UserService.Application",
+        "projectPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Application/UserService.Application.csproj",
+        "packagesPath": "/Users/Silvana/.nuget/packages/",
+        "outputPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Silvana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Domain/UserService.Domain.csproj": {
+                "projectPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Domain/UserService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/Silvana/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Domain/UserService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Domain/UserService.Domain.csproj",
+        "projectName": "UserService.Domain",
+        "projectPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Domain/UserService.Domain.csproj",
+        "packagesPath": "/Users/Silvana/.nuget/packages/",
+        "outputPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Silvana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/Silvana/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Tests.Unit/UserService.Tests.Unit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Tests.Unit/UserService.Tests.Unit.csproj",
+        "projectName": "UserService.Tests.Unit",
+        "projectPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Tests.Unit/UserService.Tests.Unit.csproj",
+        "packagesPath": "/Users/Silvana/.nuget/packages/",
+        "outputPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Tests.Unit/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Silvana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Application/UserService.Application.csproj": {
+                "projectPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Application/UserService.Application.csproj"
+              },
+              "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Domain/UserService.Domain.csproj": {
+                "projectPath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Domain/UserService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[34.0.2, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/Silvana/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "SodGgojhR7Q=",
+  "success": true,
+  "projectFilePath": "/Users/Silvana/repos/microsservico/src/services/UserService/UserService.Application/UserService.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/Silvana/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/Silvana/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",
+    "/Users/Silvana/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/Users/Silvana/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/Silvana/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/Silvana/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

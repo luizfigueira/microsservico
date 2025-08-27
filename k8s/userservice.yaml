@@ -1,0 +1,74 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: microservices
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: userservice
+  namespace: microservices
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: userservice
+  template:
+    metadata:
+      labels:
+        app: userservice
+    spec:
+      containers:
+      - name: userservice
+        image: userservice:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Production"
+        - name: ConnectionStrings__DefaultConnection
+          valueFrom:
+            secretKeyRef:
+              name: userservice-secrets
+              key: connection-string
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health/ready
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: userservice-service
+  namespace: microservices
+spec:
+  selector:
+    app: userservice
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: userservice-secrets
+  namespace: microservices
+type: Opaque
+data:
+  connection-string: U2VydmVyPXNxbHNlcnZlci1zZXJ2aWNlO0RhdGFiYXNlPVVzZXJTZXJ2aWNlRGI7VXNlciBJZD1zYTtQYXNzd29yZD1Zb3VyUGFzc3dvcmQxMjM7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT10cnVlOw==

@@ -427,16 +427,19 @@ $RECYCLE.BIN/
 ## Docker
 ##
 **/.dockerignore
-**/docker-compose*
-**/Dockerfile*
+# Keep docker configuration files
+# **/docker-compose*
+# **/Dockerfile*
 
 ##
 ## Kubernetes
 ##
 **/charts/
-**/docker/
+# Keep docker directory with configurations
+# **/docker/
 **/manifests/
-**/scripts/
+# Keep scripts directory
+# **/scripts/
 
 ##
 ## Test Results

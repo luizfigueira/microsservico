@@ -41,7 +41,7 @@ services:
       - "16686:16686"
       - "14250:14250"
     environment:
-      COLLECTOR_OTLP_ENABLED: true
+      COLLECTOR_OTLP_ENABLED: "true"
     networks:
       - microservices-network
 
